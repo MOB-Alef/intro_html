@@ -1,12 +1,21 @@
 body {
             font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
-            margin: 0;
-            padding: 20px;
+            background-color: #393939;
+            color: #ffffff;
+            margin: 20px;
+            padding: 15px;
         }
         #web,
-        h1, h2, h3,
-        a {
-            color: #fff;
+        h1,h2,h3
+        {
+            color: #2d73b8;
+            text-align: center;
+            display: inline;
         }
+        p {
+            color: #2d73b8;
+        }
+table, th, td {
+  border:1px solid rgb(0, 0, 0);
+
+}
