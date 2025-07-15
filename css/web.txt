@@ -1,0 +1,10 @@
+#web,
+        h1,h2,h3
+        {
+            color: #2d73b8;
+            text-align: center;
+            display: inline;
+        }
+        p {
+            color: #2d73b8;
+        }
