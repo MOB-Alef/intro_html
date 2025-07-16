@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><h1>What is Lorem Ipsum?</h1></title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Atv-01</title>
+  <link rel="shortcut icon" href="/img/icons/icons8-html-96.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<style> 
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    div{
-        background-color: #00ac68;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px 0;
-        color: #ffffff;
-        text-align: center;
 
-    }
-</style>
-<h1>What is Lorem Ipsum?</h1>
-<p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-    <p> Ipsum has been the industry's standard dummy text ever since the 1500s,</p> 
-    <p>when an unknown printer took a galley of type and scrambled it to make a type </p>
-    specimen book.
+<body>
 
-<div>
-    GitHub
-</div>
-<div>
-    Linkedin
-</div>
-<div>
-    Instagram
-</div>
+  <!-- Botões decorativos no topo -->
+  <header class="top-bar">
+    <nav class="top-bar__nav">
+      <button class="top-bar__button">Home</button>
+      <button class="top-bar__button">Sobre mim</button>
+    </nav>
+  </header>
 
-<p>
-    Acesse minhas redes
-</p>
-<div id="Desenvolvido_por_01">
-    Desenvolvido por 01:!
-</div>
+  <main class="wrapper">
+    <!-- coluna da esquerda -->
+    <div class="wrapper__image">
+      <img src="img/icons/Minharedes/home-de-negocio.png" alt="Imagem ilustrativa" >
+    </div>
+
+    <!-- coluna da direita -->
+    <div class="wrapper__content">
+      <h1>O que é Lorem Ipsum?</h1>
+      <p>
+        Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição de texto.<br>
+        Ipsum tem sido o texto fictício padrão da indústria desde o século 1500,<br>
+        quando um impressor desconhecido pegou uma galera de tipos e a embaralhou para fazer um tipo livro de espécimes.
+      </p>
+
+      <section class="socials">
+        <h2>Acesse minhas redes</h2>
+        <nav class="socials__list">
+          <a href="https://github.com/MOB-Alef" target="_blank" class="socials__item">
+            <img src="img/icons/Minharedes/icons8-github-96 (1).png" alt="GitHub">
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/seuusuario" target="_blank" class="socials__item">
+            <img src="img/icons/Minharedes/icons8-linkedin-96.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="socials__item">
+            <img src="img/icons/Minharedes/icons8-instagram-50.png" alt="Instagram">
+            <span>Instagram</span>
+          </a>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Desenvolvido por <span class="footer__author">Alef</span>
+  </footer>
 
 </body>
 </html>
