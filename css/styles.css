@@ -1,8 +1,8 @@
 :root {
   --bg-main: #393939;
   --bg-accent: #00ac68;
-  --color-text: #fff;
-  --color-text-visited: #000;
+  --text-light: #fff;
+  --text-dark: #000;
   --gap-lg: 40px;
   --gap-md: 20px;
   --radius: 10px;
@@ -10,39 +10,36 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: var(--bg-main);
-  color: var(--color-text);
+  background-color: var(--bg-main);
+  color: var(--text-light);
   padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
-/* -------- BARRA SUPERIOR -------- */
-.top-bar {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  margin-bottom: var(--gap-lg);
-}
-
+/* -------- Barra Superior -------- */
 .top-bar__nav {
   display: flex;
   gap: var(--gap-md);
+  margin-bottom: var(--gap-lg);
 }
 
 .top-bar__button {
   background-color: var(--bg-accent);
-  color: var(--color-text);
+  color: var(--text-light);
   border: none;
   padding: 10px 25px;
   font-size: 1.1rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
   cursor: default;
   transition: transform var(--transition), background var(--transition);
 }
@@ -56,82 +53,76 @@ body {
   background-color: #009157;
 }
 
-/* -------- CONTEÚDO PRINCIPAL -------- */
+/* -------- Estrutura Principal -------- */
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: var(--gap-lg);
-  justify-content: center;
 }
 
-/* Imagem à esquerda */
 .wrapper__image {
-  flex: 1 1 300px;
+  flex: 1 1 400px;
 }
+
 .wrapper__image img {
   width: 100%;
   border-radius: var(--radius);
 }
 
-/* Conteúdo à direita */
 .wrapper__content {
-  flex: 3 1 400px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: var(--gap-md);
 }
 
-/* Títulos e parágrafos */
 .wrapper__content h1 {
   font-size: 2.5rem;
 }
+
 .wrapper__content p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* -------- REDES SOCIAIS -------- */
+/* -------- Redes Sociais -------- */
 .socials {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  width: 100%;
+  gap: var(--gap-md);
 }
 
 .socials h2 {
-  font-size: 30px;
-  margin: 0;
-  text-align: center;
+  font-size: 20px;
 }
 
 .socials__list {
   display: flex;
   flex-direction: column;
+  gap: var(--gap-md);
   align-items: center;
-  gap: 20px;
 }
 
 .socials__item {
   display: flex;
   align-items: center;
   gap: var(--gap-md);
-  background: var(--bg-accent);
-  color: var(--color-text);
-  font-size: 1.125rem;
-  width: 100%;
-  max-width: 400px;
+  background-color: var(--bg-accent);
+  color: var(--text-light);
+  text-decoration: none;
   padding: 15px;
   border-radius: var(--radius);
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform var(--transition), background var(--transition);
 }
 
 .socials__item img {
   width: 40px;
-  height: auto;
 }
 
 .socials__item:hover {
@@ -140,23 +131,18 @@ body {
 
 .socials__item:active {
   transform: scale(0.97);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-  background: #009157;
+  background-color: #009157;
 }
 
-.socials__item:visited {
-  color: var(--color-text-visited);
-}
-
-/* -------- RODAPÉ -------- */
+/* -------- Rodapé -------- */
 .footer {
   margin-top: var(--gap-lg);
-  text-align: center;
-  background: var(--bg-accent);
-  color: var(--color-text);
+  background-color: #00ac68;
+  color: #fff;
   padding: 10px;
+  text-align: center;
   border-radius: var(--radius);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .footer__author {
